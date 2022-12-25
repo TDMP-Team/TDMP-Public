@@ -1,0 +1,24 @@
+name: Bug Report
+description: File a bug report
+title: "🐛 [Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear and concise description of what the bug is, make sure it's reproducible.
+      placeholder: "A bug happened!"
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. Check in the Teardown's game directory and you should see a log file for TDMP.
+      render: shell
